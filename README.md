@@ -32,7 +32,7 @@ No need to weave in:
 - in-process plugins
 
 
-## Yeah, but what about replication, gossip, security, live streams, authorisation?
+## Yeah, but what about replication, gossip, security, rpc, live streams, authorisation?
 
 Not here. Maybe in different modules if you want. 
 
