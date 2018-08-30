@@ -22,14 +22,14 @@ And that's it!
 
 No need to weave in:
 
-multiserver addresses
-secret handshake
-pull-streams
-weird-streams
-muxrpc
-flume-db
-some un-specified V8 weirdness
-in-process plugins
+- multiserver addresses
+- secret handshake
+- pull-streams
+- weird-streams
+- muxrpc
+- flume-db
+- some un-specified V8 weirdness
+- in-process plugins
 
 
 ## Yeah, but what about replication, gossip, security, live streams, authorisation?
