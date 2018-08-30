@@ -39,9 +39,8 @@ Not here. Maybe in different modules if you want.
 As far as security goes, how does the rest of the world do it? Oh TLS. Let's do that. Projects like let's encrypt might be a good starting point.
 Security is hard and I'm not that smart. I'd rather use something that really talented engineers have designed. And I want to push it into a black-box that can be upgraded easily as things change and vulnerabilities are found.
 
-## Database choice
 
-> Oh, this looks like a **block chain**! Yay, append only logs! (starts writing ICO)
+## Oh, this looks like a **block chain**! Yay, append only logs! (starts writing ICO)
 
 Um no. 
 
@@ -78,6 +77,7 @@ Server validates that the new message references the previous message and verifi
 ### Other queries you might want to support
 
 `?type=<post|about|contact|etc>`
+
 `?root=true`
 
 ### Other endpoints you might want to support
