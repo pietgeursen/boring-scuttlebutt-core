@@ -37,7 +37,7 @@ No need to weave in:
 Not here. Maybe in different modules if you want. 
 
 As far as security goes, how does the rest of the world do it? Oh TLS. Let's do that. Projects like let's encrypt might be a good starting point.
-Security is hard and I'm not that smart. I'd rather use something that really talented engineers have designed. And I want to push it into a black-box that can be upgraded easily as things change and vulnerabilities are found.
+Security is hard and I'm not that smart. I'd rather use something that has had lots of eyes on it. And I want to push it into a black-box that can be upgraded easily as things change and vulnerabilities are found.
 
 
 ## Oh, this looks like a **block chain**! Yay, append only logs! (starts writing ICO)
@@ -50,7 +50,7 @@ All we have to do to enforce the "append only logginess" is validate any inserte
 
 We're going to use a relational database. Guess what, they're available in iOS and Android too!
 
-And guess what, a whole bunch of really talented engineers have spent time optimising them. And you can choose what type of db you want. Postgres? sqlite? I don't care, do what you feel.
+And guess what, a whole bunch of lots and lots of people have spent time optimising them. And you can choose what type of db you want. Postgres? sqlite? I don't care, do what you feel.
 
 
 ## Possible REST API
