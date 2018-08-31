@@ -39,19 +39,15 @@ Not here. Maybe in different modules if you want.
 As far as security goes, how does the rest of the world do it? Oh TLS. Let's do that. Projects like let's encrypt might be a good starting point.
 Security is hard and I'm not that smart. I'd rather use something that has had lots of eyes on it. And I want to push it into a black-box that can be upgraded easily as things change and vulnerabilities are found.
 
-
 ## Oh, this looks like a **block chain**! Yay, append only logs! (starts writing ICO)
 
 Um no. 
 
-Sure, it's useful to conceptualise the sequence of messages as a chain. Cool, we don't need that in the data model. Because, you know what it is more than an append only log? It's a whole bunch of messages referencing other messages. We're using it as a social network after all. 
+Sure, it's useful to conceptualise the sequence of messages as a chain. But we don't need that in the data model. Because, you know what it is _more_ than an append only log? It's a whole bunch of messages referencing other messages. We're using it as a social network after all. 
 
 All we have to do to enforce the "append only logginess" is validate any inserted messages reference their parent and are are signed by their author.
 
-We're going to use a relational database. Guess what, they're available in iOS and Android too!
-
-And guess what, a whole bunch of lots and lots of people have spent time optimising them. And you can choose what type of db you want. Postgres? sqlite? I don't care, do what you feel.
-
+We're going to use a relational database. Guess what, they're available in iOS and Android too! And lots and lots of people have spent time optimising them. And you can choose what type of db you want. Postgres? sqlite? I don't care, do what you feel.
 
 ## Possible REST API
 
@@ -72,7 +68,6 @@ If you're building a phone app you might just talk directly to your db through y
 Server validates that the new message references the previous message and verifies the signature on the message.
 
 `POST /api/v1/feeds/<pub-key>`
-
 
 ### Other queries you might want to support
 
